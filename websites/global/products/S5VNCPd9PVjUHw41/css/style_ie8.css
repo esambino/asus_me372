@@ -1,0 +1,89 @@
+﻿@charset "utf-8";
+/* CSS Document */
+#special-sectionOverview section.page figure{ opacity:1;}
+#special-sectionOverview section.page hgroup > *
+{ opacity:1;  margin-top:0;}
+#special-sectionOverview .animate hgroup h1,
+#special-sectionOverview .animate hgroup h2,
+#special-sectionOverview .animate hgroup h3,
+#special-sectionOverview .animate hgroup p
+{ opacity:1; margin-top:0; }
+
+/*==beauty==*/
+article#beauty figure{  bottom:0;}
+
+article#phoneCall figure{ bottom:0;}
+
+article#people figure{ bottom:0; }
+
+article#design figure{ left:160px}
+
+article#display figure{ bottom:20px;}
+
+article#splendid figure{left:90px;}
+
+article#camera figure.phone { bottom:0px;}
+article#camera figure.pic1{ left:60px; }
+article#camera figure.pic2{ left:180px;}
+article#camera figure.pic3{ left:318px;}
+article#camera figure.pic4{ left:470px;}
+
+article#gallery figure.phone1{ bottom:-90px;}
+article#gallery figure.phone2{  bottom:0;}
+/*==sound==*/
+article#sound figure.kv-fonepad{  top:470px; }
+article#sound figure.kv-fonepad img{  margin-left:-330px; }
+article#sound figure.kv-drum{  top:0px; }
+
+article#speaker figure.phone{ bottom:45px;}
+article#speaker figure.speakerL{ bottom:45px; left:-13px;}
+article#speaker figure.speakerR{ bottom:45px; right:-14px;}
+
+
+article#sonicMaster figure{top:210px; }
+
+article#audioWizard figure{ right:-0px;}
+
+
+
+/*==touch==*/
+article#multiTouch figure{ bottom:0;}
+
+article#coating figure{ bottom:0;}
+
+/*==responsive==*/
+
+
+/*==ubiquity==*/
+article#battery figure.phoneTalk{ top:90px;}
+article#battery figure.phoneVideo{left:130px;}
+
+
+article#slot figure.phone{  top:235px; }
+article#slot figure.sdcard{left:93px;}
+
+article#webstorage figure{ bottom:0;}
+
+
+
+#miracast figure.phone{  bottom:0;}
+#miracast figure.wave{ top:368px;}
+
+
+
+
+
+/*==application==*/
+/*nav*/
+#supernote figure.phone  { bottom:0;}
+#supernote figure.hand  { bottom:-20px;}
+#floatingApp figure{ left:95px;}
+
+/*==accessory==*/
+#accessory figure.cover{  left:30px;}
+#accessory figure.phone{ right:-30px;}
+
+#headset figure.man{ bottom:0; left:-410px;}
+#headset figure.earphone{  bottom:0px; }
+
+

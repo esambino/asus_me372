@@ -1,0 +1,963 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ASUS - - ASUS S46CA </title>
+    <meta name="description" />
+    <meta name="author" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="asus_css/base.css" rel="stylesheet" />
+    <link href="asus_css/index.css" rel="stylesheet" />
+    <link href="asus_css/business.css" rel="stylesheet" />
+    <link href="asus_css/mybootstrap_to_cut.css" rel="stylesheet" />
+    <link href="asus_css/overview.css" rel="stylesheet" />
+    <link href="asus_css/base_responsive.css" rel="stylesheet" />
+    <link href="asus_css/asus_responsive.css" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script>
+        !window.jQuery && document.write(unescape("%3Cscript src='js/jquery.min.js' %3E%3C/script%3E"));
+    </script>
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="navbar navbar-fixed-top navbar-inverse" id="memberbar-zone">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" id="compare-button" data-toggle="collapse">
+                    <img src="//www.asus.com/media/img/compare_icon.png" border="0" class="avatar" />
+                </a>
+                <a class="btn btn-navbar" id="member-button" data-toggle="collapse" data-target=".member-collapse">
+                    <img src="asus_img/avatar.jpg" border="0" class="avatar" />
+                </a>
+                <div id="memberbar" class="member-collapse collapse">
+                    <ul class="nav">
+                        <li class="dropdown" id="viewed-list">
+                            <a href="javascript:" class="dropdown-toggle">Recently Viewed<span class="info-number">7</span>
+                                <div class="member-arrow"></div>
+                            </a>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown" id="compare-list">
+                            <a href="javascript:" class="dropdown-toggle">Compare List<span class="info-number">0</span>
+                                <div class="member-arrow"></div>
+                            </a>
+                            <ul class="dropdown-menu" id="compare_panel"></ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li id="li_member_pic"></li>
+                        <li class="dropdown" id="member-list">
+                            <a id="asus_memberlogin" href="javascript:" lang="en-us" class="dropdown-toggle">LOGIN</a>
+                            <ul id="ulMemberDrop" class="dropdown-menu"></ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li id="li_register">
+                            <a id="asus_memberregister" href="javascript:" lang="en-us">Sign Up</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form name="aspnetForm" method="post" action="#" id="aspnetForm">
+        <div>
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMGRkkXOi43skhu0RXjpZspZGA/UjghE=" />
+        </div>
+        <input type="submit" name="Button1" value="Do PostBack" id="Button1" style="display: none" />
+        <input id="hidVal" name="hidVal" type="hidden" value="" />
+        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+        <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+
+        <div id="mainmenu" class="navbar">
+            <nav class="navbar-inner">
+                <div class="container">
+                    <div id="asus-logo" class="span2">
+                        <a href="javascript:" title="ASUS">ASUS</a>
+                    </div>
+                    <a href="javascript:" title="ASUS"></a>
+                    <a class="btn btn-navbar" id="main-product-nav-button" data-target=".nav-collapse">
+                        <span class="icon-list"></span>
+                        <span id="products_menu_text">MENU</span>
+                    </a>
+                    <div class="nav-collapse" id="main-product-nav">
+                        <ul class="nav" id="nav">
+                            <li id="products_memu" class="active"><a href="javascript:">Products</a></li>
+                            <li id="commercial_memu"><a href="javascript:" title="">Commercial</a></li>
+                            <li id="cloud_memu"><a href="javascript:" id="menu_cloud">Cloud</a></li>
+                            <li id="support_memu"><a href="javascript:" title="">Support</a></li>
+                        </ul>
+                    </div>
+                    <div id="main-search-zone" class="pull-right">
+                        <div id="social-media">
+                            <ul class="nav">
+                                <li><a href="http://www.youtube.com/user/asus" target="_blank" title="YouTube">
+                                    <img src="asus_img/52.png" /></a></li>
+                                <li><a href="https://twitter.com/ASUS" target="_blank" title="Twitter">
+                                    <img src="asus_img/53.png" /></a></li>
+                                <li><a href="http://www.facebook.com/ASUS" target="_blank" title="Facebook">
+                                    <img src="asus_img/54.png" /></a></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-navbar" id="search-nav-button" data-target=".search-collapse">
+                            <span class="icon-search"></span>
+                            <span id="search_menu_text">Search</span>
+                        </a>
+                        <div class="search-collapse collaps" id="main-search">
+                            <div class="form-search">
+                                <!--<form class="form-search" id="main-search" method="get" action="/Search.aspx">-->
+                                <input type="text" id="searchinput" name="q" class="input-medium search-query" autocomplete="off" />
+                                <input type="text" id="searchinputDefault" class="input-medium search-query hide" />
+                                <button id="search-btn" value="Search"><span></span></button>
+                                <!--</form>-->
+                                <ul class="selectbox" style="display: none;"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="main-zone" class="container-fluid gray-bg-small">
+            <div class="container">
+                <div id="product-topinfo">
+                    <div id="breadcrumbs"><a href="javascript:">Home</a> &gt; <a href="javascript:" dir="ltr">Notebooks &amp; Ultrabooks</a> &gt; <a href="javascript:" onclick="return false;" dir="ltr"></a></div>
+                    <div id="bmenu_outline" class="hide">
+                        <div id="bemnu_content">
+                            <div id="bmenu_return"></div>
+                            <div id="scrollbarBreadcrumb">
+                                <div class="scrollbar">
+                                    <div class="track">
+                                        <div class="thumb">
+                                            <div class="end"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="viewport">
+                                    <div class="overview">
+                                        <ul></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pull-right" id="MDA">
+                        <span id="ctl00_ContentPlaceHolder1_ctl00_breadcrumbs1_lblMDA"><span class="mdatext">ASUS recommends Windows 8.　　<a href="http://event.asus.com/2012/osupgrade/ga/" target="_blank">
+                            <img src="asus_img/IMAGELINK_MDA_WW_EN.png"></a></span></span>
+                    </div>
+                </div>
+
+                <article>
+                    <h1 class="page-title"><span id="ctl00_ContentPlaceHolder1_ctl00_span_model_name">S46CA </span></h1>
+                    <nav class="row">
+                        <div id="top-nav-line" class="span12">
+                            <ul class="nav nav-tabs pull-right">
+                                <li id="lioverview" class="active"><a href="javascript:void(0);">Overview</a></li>
+                                <li id="lifeatures" class="hide"><a href="javascript:void(0);">Features</a></li>
+                                <li id="lispecifications" class="after-active"><a href="javascript:void(0);">Specifications</a></li>
+                                <li id="ligallery" class=""><a href="javascript:void(0);">Gallery</a></li>
+                                <li id="lireview" class="hide"><a href="javascript:void(0);">News &amp; Award</a></li>
+                                <li id="lisupport"><a href="javascript:void(0);">Support</a></li>
+                                <li id="liSuccessfulCase" class="hide"><a href="javascript:void(0);">Successful Case</a></li>
+                                <li id="liwheretobuy" class="hide"><a href="javascript:void(0);">Where to buy</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div id="product_content_area" class="consumer_style">
+                        <div id="overview" class="clearfix" style="display: block;">
+                            <header class="product-head row">
+                                <div class="span6" id="product-info-zone">
+                                    <img src="asus_img/P_500.jpg" alt="Product Image" />
+                                    <!--other logo-->
+                                    <div id="product-quick-logo">
+                                        <ul class="unstyled">
+                                        </ul>
+                                    </div>
+                                    <!--End-->
+                                </div>
+                                <div class="span6 v-center" id="product-main-image">
+                                    <hgroup>
+                                        <h1 class="product-slogan">Performance Ultrabook<sup>™</sup> with optical drive</h1>
+                                        <div class="product-intro">
+                                            <ul>
+                                                <li>Windows 7 Ultimate  or other editions available</li>
+                                                <li>Fits an optical drive in 21mm</li>
+                                                <li>Genuine Windows® 7 Ultimate or other editions available</li>
+                                                <li>Enjoy SonicMaster Lite for more powerful sound performance</li>
+                                                <li>Instant on in 2 seconds and longer standby time with the efficiency of Super Hybrid Engine II technology</li>
+                                                <li>Smart Gesture touchpad for always fingertip-natural computing</li>
+                                                <li>Combines SSD performance and HDD capacity for better computing experiences</li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="small-star"><img src="/images/small-star.jpg"></div>-->
+                                        <div class="color-select"></div>
+                                        <label class="checkbox add-to-list">
+                                            <input type="checkbox" value="Add To List">Add To List</label>
+                                        <!--other logo-->
+                                        <div id="product-quick-award">
+                                            <ul class="unstyled"></ul>
+                                        </div>
+                                        <!--End-->
+                                        <div id="product-where-to-buy" class="btn-group shop-btn-group hide">
+                                            <a class="btn-asus" href="javascript:void(0);">Shop</a>
+                                        </div>
+                                    </hgroup>
+                                </div>
+                            </header>
+                            <aside class="product-aside width-line-gray row">
+                                <div id="aside-button" class="span8">
+                                    <a class="print-btn" onclick="print_click()">Print</a>
+                                    <a class="link-btn hide" target="_blank">Microsite</a>
+
+                                    <a class="sub-btn hide" target="_blank"></a>
+                                </div>
+
+                            </aside>
+
+
+                            <!--  special-sectionOverview  @start-->
+
+<section id="special-sectionOverview">
+<script src="/websites/global/products/S5VNCPd9PVjUHw41/js/load.js" type="text/javascript"></script>
+<section id="wrap">
+
+<!-- index start-->
+<section class="page index animate">
+<article id="index" class="content">
+<div id="reel">
+<a href="#" class="close_reel">close</a> <img id="reel_image" src="/websites/global/products/S5VNCPd9PVjUHw41/img/common/reel/ME372_131025_comp_00000.png" width="600" height="600" alt="" />
+<div class="bg"></div>
+<div class="overlay"></div>
+</div>
+    <aside class="center">
+        
+		<div class="video">
+        <a href="http://www.youtube.com/embed/z73vOUAZ1qk?autoplay=1" target="_blank"><span></span><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/index/video_1.png" /></a>
+        <a href="http://www.youtube.com/embed/LOP5lbx_uuM?autoplay=1" target="_blank"><span></span><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/index/video_2.png" /></a>
+        </div>	
+        <figure><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/index/fonepad_HD7.png" /></figure>
+        
+        <hgroup>
+            <h1><img src="websites/global/products/S5VNCPd9PVjUHw41/img/en/index/asus_fonepad_HD7.png" alt="ASUS MEMO PAD HD7" /></h1>
+            <h3>Welcome to a Brand New Mobile Experience with the ASUS Fonepad 7.</h3>
+            <p>ASUS has combined the best of the smartphone experience with powerful tablet ability that will improve every aspect of your life.</p>
+<a class="open_reel">360° view</a>
+        </hgroup>
+
+    </aside>
+</article>
+</section>
+<!-- index end-->
+
+<!-- beauty start-->
+<section class="page beauty">
+                                        
+<!--content--> 
+<section class="wide" id="slide1">
+<article id="beauty" class="content" title="Beauty">
+	<aside class="center">
+    <figure class="kv-fonepad"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/beauty/tmp/fonepad.png" /></figure>
+		<hgroup>
+        <h1>Beauty</h1>
+		<h2>The Best in Mobile Technology Just Got Better for Everyone</h2>
+		<p>Meet the new ASUS Fonepad 7, the world’s most innovative combination of mobile phone and tablet. Experience all the features you’d expect from a mobile phone in a 7-inch tablet design.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article1 end-->
+
+
+<article id="phoneCall" class="content" title="3G Phone">
+	<aside class="center">
+ <figure><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/beauty/3gphone_fonepad.png" /></figure>
+		<hgroup>
+		<h2>The Innovative New Mobile Adventure</h2>
+		<p>Start your adventure with the perfect mobile experience. The Fonepad 7 3G service satisfies every mobile phone and tablet need, right in the palm of your hand. Whether its social media, or your social circle, you’ll always be in touch. </p>
+        <small style="font-size:9px;line-height:18px;opacity:1;margin-top:30px;display:block;">* ASUS Fonepad 7 uses the latest Micro SIM standard. Please acquire the standardized Micro SIM card from your mobile service provider. If you cut the SIM card yourself, the tablet may not be able to detect the SIM card due to improper contact points between the SIM card and the tablet.</small>
+		</hgroup>
+	</aside>
+</article>
+<!--article2 end-->
+
+<article id="people" class="content" title="People">
+	<aside class="center">
+    <figure><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/beauty/people_fonepad.png" /></figure>
+		<hgroup>
+		<h2>Keep Close Friends By Your Side</h2>
+		<p>Stay in touch with family and friends through social media. Whether its Facebook, Twitter, or Instagram, you’ll know what your loved ones are up to.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article3 end-->
+
+<article id="design" class="content" title="Design">
+	<aside class="center">
+    <figure><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/beauty/design_fonepad.png" /></figure>
+		<hgroup>
+		<h2> Style Meets Substance</h2>
+		<p>The sleek lines of the ASUS Fonepad 7 will draw looks from those around you. Available in stylish Sapphire Black or Diamond White, your device will be the envy of your friends. </p>
+		</hgroup>
+	</aside>
+</article>
+<!--article4 end-->
+
+<article id="display" class="content" title="Display">
+	<aside class="center">
+    <figure><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/beauty/display_fonepad.png" /></figure>
+		<hgroup>
+		<h2>Crystal-Clear Entertainment</h2>
+		<p>ASUS Fonepad 7 features a 1280x800 HD IPS display with an incredible 178-degree viewing angle so you can share what’s onscreen with those around you.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article5 end-->
+
+<article id="splendid" class="content" title="ASUS Splendid">
+	<aside class="center">
+    <figure><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/beauty/splendid_fonepad.png" /></figure>
+		<hgroup>
+        <h1>Splendid</h1>
+		<h2>It’s all in the Details</h2>
+		<p>Color schemes come to life with the new ASUS Splendid. You’ll be amazed at textures and colors like never before.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article6 end-->
+
+<article id="camera" class="content" title="Camera">
+	<aside class="center">
+        <figure class="phone"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/beauty/camera_fonepad.png" /></figure>
+        <figure class="pic1"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/beauty/camera_pic1.png" /></figure>
+        <figure class="pic2"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/beauty/camera_pic2.png" /></figure>
+        <figure class="pic3"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/beauty/camera_pic3.png" /></figure>
+        <figure class="pic4"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/beauty/camera_pic4.png" /></figure>
+		<hgroup>
+		<h2>Professional Photography For Everyone</h2>
+		<p>Shoot professional grade photos and videos with the ASUS Fonepad 7’s front and rear-facing cameras. With its incredible 100-shot burst mode, you’ll never miss a single moment.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article7 end-->
+
+<article id="asusGallery" class="content" title="ASUS Gallery">
+	<aside class="center">
+        <figure class="phone1"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/beauty/gallery_fonepad_back.png" /></figure>
+        <figure class="phone2"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/beauty/gallery_fonepad_front.png" /></figure>
+
+		<hgroup>
+        <h1>Gallery</h1>
+		<h2>Create and Share the Moments of Your Life</h2>
+		<p>Edit and organize all of your photos with the fluid Studio application. Crop and label photos and instantly share them with friends and family. </p>
+		</hgroup>
+	</aside>
+</article>
+<!--article8 end-->
+
+<article id="Dual" class="content" title="Dual SIM">
+	<aside class="center">
+        <figure class="phone"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/beauty/dual_fonepad.png" /></figure>
+		<hgroup>
+        <!--<h1>Gallery</h1>-->
+		<h2>Dual SIM, Dual Stand by</h2>
+		<p>The Fonepad 7 Dual SIM 3G service satisfies every mobile phone and tablet needs. The Dual SIM function also help you to handle well of both your work and personal life, you'll never miss a call again!</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article9 end-->
+
+</section>
+ <!--content end--> 
+ 
+<!-- nav-->
+<nav class="black" id="sliderNavBeauty">
+<div class="pagerList">
+<span class="front"></span>
+<div class="back"><ul>
+</ul></div>
+</div>
+    
+<aside class="arrow-container">
+	<a class="tabarrow prev" title="previous"></a>
+	<a class="tabarrow next" title="next"></a>
+</aside>
+</nav>
+<!-- nav end-->
+
+</section>
+<!--beauty end-->
+
+<!--sound start-->
+<section class="page sound">
+                                        
+<!--content--> 
+<section class="wide" id="slide2">
+<article id="sound" class="content" title="Sound">
+	<aside class="center">
+    <figure class="kv-fonepad"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/sound/tmp/fonepad.png" /></figure>
+    <figure class="kv-drum"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/sound/tmp/drum.png" /></figure>
+		<hgroup>
+        <h1>Sound</h1>
+		<h2>High Quality Audio with SonicMaster</h2>
+		<p>The ASUS Fonepad 7 delivers high quality audio to bring entertainment to life. Your listening experience will never be the same again when you hear your favorite tracks through precise and powerful SonicMaster speakers.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article1 end-->
+
+<article id="speaker" class="content" title="Dual Front Speakers">
+	<aside class="center">
+    <figure class="phone"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/sound/speaker_fonepad.png" /></figure>
+    <figure class="speakerL"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/sound/speaker_l.png" /></figure>
+    <figure class="speakerR"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/sound/speaker_r.png" /></figure>
+		<hgroup>
+		<h2>Be Immersed in Total Sound</h2>
+		<p>Our engineers obsessed over bringing an innovative audio package to the ASUS Fonepad 7. Dual front-facing speakers immerse you in crystal-clear audio.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article2 end-->
+
+<article id="sonicMaster" class="content" title="SonicMaster">
+	<aside class="center">
+    <figure><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/sound/sonic_master_fonepad.png" /></figure>
+		<hgroup>
+        <h1><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/sound/sonic_master_logo.png" /></h1>
+		<h2>A Better Definition of Superior Sound</h2>
+		<p>Experience home theater-quality audio on-the-go with ASUS SonicMaster.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article3 end-->
+
+<article id="audioWizard" class="content" title="Audio Wizard">
+	<aside class="center">
+    <figure><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/sound/wizard_fonepad.png" /></figure>
+		<hgroup>
+		<h1>Audio Wizard</h1>
+		<h2>Tune in to Customized Audio</h2>
+		<p>Make your movies and games come to life with customized sound by AudioWizard. Adjust and tailor audio settings to suit whatever is onscreen, the difference will amaze you.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article4 end-->
+
+</section>
+ <!--content end--> 
+ 
+<!-- nav-->
+<nav class="black" id="sliderNavSound">
+<div class="pagerList">
+<span class="front"></span>
+<div class="back"><ul>
+</ul></div>
+</div>
+    
+<aside class="arrow-container">
+	<a class="tabarrow prev" title="previous"></a>
+	<a class="tabarrow next" title="next"></a>
+</aside>
+</nav>
+<!-- nav end-->
+
+</section>
+<!--sound end-->
+
+<!--touch start-->
+<section class="page touch">
+                                        
+<!--content--> 
+<section class="wide" id="slide3">
+<article id="touch" class="content" title="Touch">
+	<aside class="center">
+		<hgroup>
+        <h1>Touch</h1>
+		<h2>Your New Mobile Experience Begins with A Single Touch</h2>
+		<p>Your ASUS Fonepad 7 experience starts at your fingertips. Get in touch with the next step in mobile technology.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article1 end-->
+
+<article id="multiTouch" class="content" title="MultiTouch">
+	<aside class="center">
+<figure><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/touch/multi_touch_fonepad.png" /></figure>
+		<hgroup>
+		<h2>Control Every Inch of the Screen for Any Purpose</h2>
+		<p>The dynamic new 10 point Multi-touch Feature lets you gain better control over gaming, browsing and keyboard functions.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article2 end-->
+
+<article id="fit" class="content" title="Touch of the Design">
+	<aside class="center">
+		<hgroup>
+		<h2>Calling for Your Touch</h2>
+		<p>With its gently curved lines fitting in the palm of your hand, nothing feels quite like the ergonomically-designed ASUS Fonepad 7.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article3 end-->
+
+</section>
+ <!--content end--> 
+ 
+<!-- nav-->
+<nav class="black" id="sliderNavTouch">
+<div class="pagerList">
+<span class="front"></span>
+<div class="back"><ul>
+</ul></div>
+</div>
+    
+<aside class="arrow-container">
+	<a class="tabarrow prev" title="previous"></a>
+	<a class="tabarrow next" title="next"></a>
+</aside>
+</nav>
+<!-- nav end-->
+
+</section>
+<!--touch end-->
+
+<!--Response start-->
+<section class="page responsive">
+                                        
+<!--content--> 
+<section class="wide">
+<article id="responsive" class="content animate" title="CPU">
+	<aside class="center">
+ <figure class="kv-fonepad"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/response/tmp/fonepad.png"></figure>
+    <!--<img style="top:260px; left:-15px; position:absolute;" src="websites/global/products/S5VNCPd9PVjUHw41/intel.png">-->
+        <hgroup>
+            <h1>Responsiveness</h1>
+            <h2>Intel level Performance</h2>
+            <p>Intel® Atom™ processor lets you move effortlessly between multiple apps on the go.</p>
+            <!--<p style="font-size:9px; line-height:18px; position:absolute; bottom:-180px;">Intel, the Intel logo, the Intel Inside logo and Intel® Atom™  are trademarks of Intel Corporation in the U.S. and/or other countries</p>-->
+        </hgroup>
+    </aside>
+</article>
+<!--article1 end-->
+
+</section>
+ <!--content end--> 
+ 
+</section>
+<!--Response end-->
+
+<!--Ubiquity start-->
+<section class="page ubiquity">
+                                        
+<!--content--> 
+<section class="wide" id="slide4">
+<article id="ubiquity" class="content" title="Ubiquity">
+	<aside class="center">
+        <figure class="kv-fonepad"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/cloud/tmp/fonepad.png"></figure>
+		<hgroup>
+        <h1>Ubiquity</h1>
+		<h2>Go Anywhere You Need to Be</h2>
+		<p>It is designed for your on-the-go life; take ASUS Fonepad 7 with you wherever you go.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article1 end-->
+
+<article id="battery" class="content" title="Battery Life">
+	<aside class="center">
+    <figure class="phoneTalk"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/cloud/battery_talk.png" /></figure>
+    <figure class="phoneVideo"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/cloud/battery_video.png" /></figure>
+		<hgroup>
+		<h2>All Day Battery Performance</h2>
+		<p>With an astounding 26 hours of 3G talk time and 10 hours of video playback, ASUS Fonepad 7 has enough juice to keep you going through the day.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article2 end-->
+
+<article id="slot" class="content" title="MICRO SD Slot">
+	<aside class="center">
+	<figure class="phone"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/cloud/microsd_fonepad.png" /></figure>
+    <figure class="sdcard"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/cloud/microsd_card.png" /></figure>
+		<hgroup>
+		<h2>Additional Storage</h2>
+		<p>Fonepad 7 features a micro SD for up to an additional 64GB of storage.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article3 end-->
+
+<article id="webstorage" class="content" title="Webstorage">
+	<aside class="center">
+    <figure><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/cloud/webstorage_fonepad.png" /></figure>
+		<hgroup>
+		<h2>Create Your Own Cloud with ASUS WebStorage</h2>
+		<p>Stay connected with all of your devices, wherever you are. With WebStorage, mobile access to new or existing files is at a touch of the screen. ASUS WebStorage keeps everything right where you need it.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article4 end-->
+
+<article id="miracast" class="content" title="Miracast">
+	<aside class="center">
+    <figure class="phone"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/cloud/miracast_fonepad.png" /></figure>
+    <figure class="wave"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/cloud/miracast_wave.png" /></figure>
+
+		<hgroup>
+		<h2>View Your Fonepad 7’s Content on a Larger Screen</h2>
+		<p>The innovative new Miracast lets you share your content wirelessly. Watch or view your videos or pictures by syncing up with another friend’s mobile device or go big with a 4K Ultra HDTV. </p>
+		</hgroup>
+	</aside>
+</article>
+<!--article5 end-->
+</section>
+ <!--content end--> 
+ 
+<!-- nav-->
+<nav class="black" id="sliderNavUbiquity">
+<div class="pagerList">
+<span class="front"></span>
+<div class="back"><ul>
+</ul></div>
+</div>
+    
+<aside class="arrow-container">
+	<a class="tabarrow prev" title="previous"></a>
+	<a class="tabarrow next" title="next"></a>
+</aside>
+</nav>
+<!-- nav end-->
+
+</section>
+<!--Ubiquity end-->
+
+<!--application start-->
+<section class="page application">
+                                        
+<!--content--> 
+<section class="wide" id="slide5">
+<article id="supernote" class="content" title="Supernote">
+	<aside class="center">
+    <figure class="kv-fonepad"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/app/tmp/fonepad.png" /></figure>
+    <!--<figure class="hand"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/app/supernote_hand.png" /></figure>-->
+		<hgroup>
+        <h1>Supernote</h1>
+		<h2>A Note-Taking Tool for the Perfect Multimedia Device</h2>
+		<p>SuperNote lets you read, type and scribble text. If that’s not enough, insert photos or videos to create multimedia notes.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article1 end-->
+
+<article id="floatingApp" class="content" title="Floating Apps">
+	<aside class="center">
+    <figure><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/app/floating_fonepad.png" /></figure>
+		<hgroup>
+		<h2>Never Get Caught between Apps Again</h2>
+		<p>The clever Floating App lets you instantly switch between apps without having to close the previous one. Move seamlessly from surfing the web to email to gaming with just a swipe.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article2 end-->
+
+</section>
+ <!--content end--> 
+ 
+<!-- nav-->
+<nav class="black" id="sliderNavApplication">
+<div class="pagerList"><ul></ul></div>
+<aside class="arrow-container">
+	<a class="tabarrow prev" title="previous"></a>
+	<a class="tabarrow next" title="next"></a>
+</aside>
+</nav>
+<!-- nav end-->
+
+</section>
+<!--application end-->
+
+
+<!--accessory start-->
+<section class="page accessory">
+                                        
+<!--content--> 
+<section class="wide" id="slide6">
+<article id="accessory" class="content" title="Accessory">
+	<aside class="center">
+    <figure class="cover"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/accesory/tmp/cover.png" /></figure>
+    <figure class="kv-fonepad"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/accesory/tmp/fonepad.png" /></figure>
+		<hgroup>
+        <h1>Accessory</h1>
+		<h2>Perfectly Designed to Keep You Covered</h2>
+		<p>Enjoy entertainment and video calling from a comfortable angle. The interesting design folds neatly for your satisfaction as a stand and its safety as a cover.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article1 end-->
+
+<article id="headset" class="content" title="Headset">
+	<aside class="center">
+<figure class="man"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/accesory/earphone_man.png" /></figure>
+<figure class="earphone"><img src="websites/global/products/S5VNCPd9PVjUHw41/img/common/accesory/earphone_earphone.png" /></figure>
+		<hgroup>
+		<h2>Hands Free Means More Freedom in Your Life</h2>
+		<p>The stylish new NearField Headset keeps you hands-free throughout your busy life. Enjoy music and conversations through its wireless BlueTooth technology.</p>
+		</hgroup>
+	</aside>
+</article>
+<!--article2 end-->
+
+</section>
+ <!--content end--> 
+ 
+<!-- nav-->
+<nav class="black" id="sliderNavAccessory">
+<div class="pagerList">
+<span class="front"></span>
+<div class="back"><ul>
+</ul></div>
+</div>
+    
+<aside class="arrow-container">
+	<a class="tabarrow prev" title="previous"></a>
+	<a class="tabarrow next" title="next"></a>
+</aside>
+</nav>
+<!-- nav end-->
+
+</section>
+<!--accessory end-->
+
+
+<!--mainMenu-->
+<nav id="main-menu">
+    <ul>
+        <li class="m1 on"><a title="Index" href="javascript:"><span class="icon"></span>Top</a></li>
+        <li class="m2"><a title="Beauty" href="javascript:"><span class="icon"></span>Beauty</a></li>
+        <li class="m3"><a title="Sound" href="javascript:"><span class="icon"></span>Sound</a></li>
+        <li class="m4"><a title="Touch" href="javascript:"><span class="icon"></span>Touch</a></li>
+        <li class="m5"><a title="Responsiveness" href="javascript:"><span class="icon"></span>Responsiveness</a></li>
+        <li class="m6"><a title="Ubiquity" href="javascript:"><span class="icon"></span>Ubiquity</a></li>
+        <li class="m7"><a title="Applications" href="javascript:"><span class="icon"></span>Applications</a></li>
+        <li class="m8"><a title="Accessory" href="javascript:"><span class="icon"></span>Accessory</a></li>
+    </ul>
+</nav>
+<!--mainMenu end-->
+</section>
+<!--wrap end-->
+</section>
+                            <!--  special-sectionOverview  @end-->
+
+
+                            <hr class="gray" />
+                            <div class="span4 similar-area" style="width: 283px;">
+                                <h2 class="item-title">Similar List</h2>
+                                <div class="article-btn">
+                                    <a class="article-go-left no_next" id="similar_left_btn" href="javascript:"></a>
+                                    <a class="article-go-right" id="similar_right_btn" href="javascript:"></a>
+                                </div>
+                                <div id="product_similar_area" style="width: 608px;">
+                                    <ul class="similar-zone active" style="width: 304px; margin-right: 0px;">
+                                        <li>
+                                            <a href="javascript:" title="U31SG">
+                                                <img class="accessory-img" src="asus_img/P_120.jpg">
+                                                <div class="side-content">
+                                                    <h3>U31SG</h3>
+                                                    <p>Stunningly light, Powerfully beautiful</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+
+                                        <li>
+                                            <a href="javascript:" title="UL50Vs">
+                                                <img class="accessory-img" src="asus_img/P_120(1).jpg">
+                                                <div class="side-content">
+                                                    <h3>UL50Vs</h3>
+                                                    <p>Possibilities UnLimited</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="span8-line accessories-area">
+                                <h2 class="item-title">Related Item</h2>
+                                <div class="article-btn">
+                                    <a class="article-go-left no_next" id="accessories_left_btn" href="javascript:"></a>
+                                    <a class="article-go-right" id="accessories_right_btn" href="javascript:"></a>
+                                </div>
+
+                                <div id="product_accessory_area" style="width: 1200px;">
+                                    <ul class="accessory-zone active" style="width: 600px; margin-right: 0px;">
+                                        <li>
+                                            <a href="javascript:" title="90W Car Charger">
+                                                <img class="accessory-img" src="asus_img/P_150.jpg">
+                                                <div>
+                                                    <h3>90W Car Charger</h3>
+                                                    <p>Slim car charger</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+
+                                        <li>
+                                            <a href="javascript:" title="Accessory Pack A">
+                                                <img class="accessory-img" src="asus_img/P_150(1).jpg">
+                                                <div>
+                                                    <h3>Accessory Pack A</h3>
+                                                    <p>Complete your Netbook Experience with the Accessories Pack</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+
+                                        <li>
+                                            <a href="javascript:" title="U3000">
+                                                <img class="accessory-img" src="asus_img/P_150(2).jpg">
+                                                <div>
+                                                    <h3>U3000</h3>
+                                                    <p>Gloss up your typing in compact style</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <div id="product-footer-zone" class="row">
+                    <div class="span6" id="product-line-footer">
+                        <p>Centrino Logo, Core Inside, Intel, Intel Logo, Intel Core, Intel Inside, Intel Inside Logo, Intel Viiv, Intel vPro, Itanium, Itanium Inside, Pentium, Pentium Inside, Viiv Inside, vPro Inside, Xeon, and Xeon Inside are trademarks of Intel Corporation in the U.S. and other countries.</p>
+                        <p>Product specifications may differ from country to country. We recommend that you check with your local dealers for the specifications of the products available in your country. Colors of products may not be perfectly accurate due to variations caused by photography and monitor settings.Due to photographic variables and conditions, actual product appearance may differ from images shown on this site.Although we endeavor to present the most accurate and comprehensive information at the time of publication, we reserve the right to make changes without prior notice.</p>
+                    </div>
+                    <div class="span6" id="all-product-line-footer">
+                        <img class="hdmi-icon" src="asus_img/C95uEpFbTqPqgocG.jpg" /><ul>
+                            <li>All specifications are subject to change without notice. Please check with your supplier for exact offers. Products may not be available in all markets. </li>
+                            <li>PCB color and bundled software versions are subject to change without notice. </li>
+                            <li>Brand and product names mentioned are trademarks of their respective companies.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a data-toggle="modal" href="javascript:" id="videomodel" onclick="return false;" class="hide"></a>
+        <div id="middle-menu-zone" class="container-fluid">
+            <div class="container">
+                <div id="extra_link">
+                    <a href="javascript:" id="footer_country_link">Global / <span>English   </span></a>
+                    <div class="navbar pull-right navbar-inverse" id="middle-menu">
+                        <nav class="navbar-inner">
+                            <ul class="nav ">
+
+                                <li class="navbar-li"><a href="javascript:" id="menu_awards">Awards</a></li>
+                                <li class="divider-vertical"></li>
+                                <li class="navbar-li"><a href="javascript:" id="menu_news">News</a></li>
+                                <li class="divider-vertical"></li>
+                                <li class="navbar-li"><a href="javascript:" id="menu_aboutasus">About ASUS</a></li>
+                                <li class="divider-vertical"></li>
+                                <li class="navbar-li navbar-li-last"><a href="javascript:" class="menuevent">Event</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="mainfooter" class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div id="products-sitemap" class="span4">
+                        <h4>Want More?</h4>
+                        <nav class="row">
+                            <ul id="tree_system span2">
+                                <li><a href="javascript:" target="_blank">Tech In Style</a></li>
+                                <li><a href="javascript:" target="_blank">ROG</a></li>
+                                <li><a href="javascript:" target="_blank">SonicMaster</a></li>
+                                <li><a href="javascript:" target="_blank">Design Story</a></li>
+                            </ul>
+                            <ul id="Ul1">
+                                <li><a href="javascript:" target="_blank">Eee is Me</a></li>
+                                <li><a href="javascript:" target="_blank">ZENBOOK</a></li>
+                                <li><a href="javascript:" target="_blank">TUF</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="aside-menu" class="span4">
+                        <h4>Who We Are</h4>
+                        <nav class="row">
+                            <ul class="span2">
+                                <li><a href="javascript:" target="_blank">About ASUS</a></li>
+                                <li><a href="javascript:" target="_self">Investor Relations</a></li>
+                            </ul>
+                            <ul class="span2">
+                                <li><a href="javascript:" target="_blank">Employment</a></li>
+                                <li><a href="javascript:" target="_blank">About CSR</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                    <div id="help-menu" class="span4">
+                        <h4>Need Help?</h4>
+                        <nav class="row">
+                            <ul class="span2">
+                                <li><a href="javascript:" target="_self">Driver Download</a></li>
+                                <li><a href="javascript:" target="_self">Contact Us</a></li>
+                                <li><a href="javascript:" target="_blank">Product Registration</a></li>
+                            </ul>
+                            <ul class="span2">
+                                <li><a href="javascript:" target="_self">Repair Status Inquiry</a></li>
+                                <li><a href="h#" target="_self">Warranty Policy Inquiry</a></li>
+                            </ul>
+                        </nav>
+                        <div id="call_message" class="hide">Monday to Friday from 9:00 to 18:00</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="bottom-menu" class="span12">
+                        <a href="javascript:" target="_top">Terms of Use Notice</a>
+                        <a href="javascript:" target="_top">Privacy Policy</a>
+                        <div id="copyright">©ASUSTeK Computer Inc. All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a id="LangSelection" href="javascript:" class="thickbox hide" title=""></a>
+
+        <div class="modal hide" id="ProductVideoModal">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">×</button>
+                <h3>Modal header</h3>
+            </div>
+            <div class="modal-body">
+                <p></p>
+            </div>
+
+        </div>
+        <div class="modal hide" id="ProductAwardModal">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">×</button>
+                <h3></h3>
+            </div>
+            <div class="modal-body">
+                <p></p>
+                <a class="btn btn-primary" href="javascript:" target="_blank">I confirm, please take me there.</a>
+                <a href="javascript:" class="btn" data-dismiss="modal">Cancel</a>
+            </div>
+
+        </div>
+        <div class="modal hide" id="supportVideoModal">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">×</button>
+                <h3></h3>
+            </div>
+            <div class="modal-body">
+                <p></p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
